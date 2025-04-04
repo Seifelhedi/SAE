@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.product-shape.selected {
+    stroke: #000; /* Bordure noire */
+    stroke-width: 2px; /* Épaisseur de la bordure */
+    opacity: 0.8; /* Légère transparence */
+}
+.relative {
+    position: relative;
+}
+
+#product-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10; /* SVG au-dessus de l'image */
+}
+
+img {
+    position: relative;
+    z-index: 1; /* Image en dessous du SVG */
+}
+
+svg {
+    opacity: 75%;
+}
+.hidden {
+    display: none;
+}
